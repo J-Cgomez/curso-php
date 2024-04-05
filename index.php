@@ -45,13 +45,21 @@ curl_close($ch);
     </section>
 
     <hgroup>
-        <h3><?= $data["title"]; ?> Se estrena en <?= $data["days_until"]; ?> dias</h3>
+        <h3><?= $data["title"]; ?> Se estrena en <?= $data["days_until"]; ?> días!</h3>
 
         <p>Fecha de estreno: <?= $data["release_date"]; ?></p>
 
         <p>La siguiente es: <?= $data["following_production"]["title"]; ?> </p>
+
+        
     </hgroup>
 
+    <footer>
+    <p>Made with 💟 <a target="_blank" rel="noopener noreferrer" href="https://github.com/J-Cgomez">JC_Gomez</a></p>
+
+    <p>El jhona me la pela :V</p>
+    </footer>
+    
 </main>
     
 </body>
@@ -72,6 +80,11 @@ curl_close($ch);
     }
 
     body{
+        display: grid;
+        place-content: center;
+    }
+
+    footer{
         display: grid;
         place-content: center;
     }
